@@ -16,19 +16,20 @@
 </head>
 <body>  
 
-    <div id="page-home">
+    <div id="page-home"><!--div page-home-->
 
-        <div class="content">
+        <div class="content"><!--div content-->
 
-            <header>
+
+            <header><!--Logo, link para cadastrar coleta-->
                 <img src="/icones/logo.svg" alt="logomarca">
-                <a href="create-point.html">
+                <a href="create-point">
                     <span></span>
                     Cadastre um ponto de coleta
                 </a>
-            </header>
+            </header><!--fim header-->
 
-            <main>
+            <main><!--Corpo com frases-->
 
                 <h1>Seu marketplace de coleta de resíduos!</h1>
 
@@ -36,19 +37,19 @@
     
                 <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
     
-            </main>
+            </main><!--fim main-->
 
-        </div>
-    </div>
+        </div> <!--fim content-->
+    </div> <!--fim page-home-->
 
 
-    <div id="modal" class="hide">
-        <div class="content">
+    <div id="modal" class="hide"><!--div modal-->
+        <div class="content"><!--div content-->
             <div class="header">
                 <h1>Pontos de Coleta</h1>
                 <a href="#">Fechar</a>
             </div>
-            <form action="/search-results.html">
+            <form action="search-results"><!--formulario de busca para uma cidade-->
                 <label for="search">Cidade:</label>
                 <div class="search field">
                     <input type="text" name="search" placeholder="Pesquise por uma cidade...">
@@ -56,9 +57,9 @@
                         <img src="/icones/search.svg" alt="Buscar">
                     </button>
                 </div>
-            </form>
-        </div>
-    </div>
+            </form><!--fim form-->
+        </div><!--fim content-->
+    </div><!--fim modal-->
 
     <script src="/scripts/index.js"></script>
 
