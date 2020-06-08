@@ -46,16 +46,19 @@ document
 
 
 //Itens de coleta
+//pega todos os li. 
+//Cada um item adiciona uma callback para ser executada toda vez que for clicada
 const itemsToCollect = document.querySelectorAll(".items-grid li")
 
 for (const item of itemsToCollect) {
     item.addEventListener("click", handleSelectedItem)
 }
 
-
+//pegando items de coleta
 //atualizar o campo escondido com os itens selecionados parte 1
 const collectedItems = document.querySelector("input[name=items]")
 
+//colocando os valores
 let selectItems = []
 
 function handleSelectedItem(event) {
@@ -65,6 +68,8 @@ function handleSelectedItem(event) {
     itemLi.classList.toggle("selected")
 
     const itemId = event.target.dataset.id
+
+    console.log('ITEM ID: ', itemId)
     
     //verificando se existe itens selecionados, se sim
     //pegar os itens selecionados
@@ -85,6 +90,8 @@ function handleSelectedItem(event) {
         //se não tiver selecionado, adicionar à seleção
         selectItems.push(itemId)
     }
+
+    console.log('ITEM ID: ', itemId)
 
     //atualizar o campo escondido com os itens selecionados parte 2
     collectedItems.value = selectItems
